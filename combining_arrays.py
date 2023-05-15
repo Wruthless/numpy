@@ -1,0 +1,17 @@
+from numpy import *
+
+a1 = array([1, 2, 3])
+print(a1)
+
+a2 = array([4, 5, 6])
+print(a2)
+
+# vertical stack
+a3 = vstack((a1, a2))
+print(a3)
+print(a3.shape)
+
+# horizontal stack
+a4 = hstack((a1, a2))
+print(a4)
+print(a4.shape)
