@@ -39,6 +39,24 @@ print(df, "\n")
 
 # Dataframe with two-dimensional numpy array.
 ar2 = np.array([[17, 21, 33],
-                [22, 45, 71]])
-df2 = DataFrame(data=ar2, columns=['C1', 'C2', 'C3'], index=['a', 'b'])
-print(df2)
+                [22, 45, 71],
+                [34, 67, 99]])
+df2 = DataFrame(data=ar2, columns=['C1', 'C2', 'C3'], index=['a', 'b', 'c'])
+print(df2, "\n")
+print("Access to column 'C1' and 'C3' from dataframe")
+print(df2['C1'], "\n")
+print(df2['C3'], "\n")
+print("All rows in 'c' and all rows in 'a' (using iloc[0])")
+print(df2.loc['c'])
+print(df2.iloc[0], "\n")
+
+print('--------------------------------')
+
+print("Single values.")
+
+# Single values
+print(df2.loc['b', 'C2'])
+print(df2.iloc[1, 1], "\n")
+
+print('--------------------------------')
+
